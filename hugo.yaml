@@ -1,0 +1,85 @@
+baseURL: "https://smile-1973.github.io/"
+languageCode: "zh-cn"
+title: "XMZ's Blog"
+theme: "PaperMod"
+
+pagination:
+  pageSize: 10
+rssLimitation: 10
+
+canonicalURL: ""
+
+defaultLayouts:
+  home: "home"
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+    highlight:
+      codeFences: true
+      noHl: false
+      lineNumbersInTable: true
+  highlight:
+    style: "github-dark"
+  tableOfContents:
+    startLevel: 2
+    endLevel: 4
+    ordered: false
+
+menu:
+  main:
+    - identifier: home
+      name: 首页
+      url: /
+      weight: 10
+    - identifier: archives
+      name: 归档
+      url: /posts/
+      weight: 20
+    - identifier: tags
+      name: 标签
+      url: /tags/
+      weight: 30
+    - identifier: search
+      name: 搜索
+      url: /search/
+      weight: 40
+    - identifier: about
+      name: 关于
+      url: /about/
+      weight: 50
+
+params:
+  env: "production"
+  description: "中国科大电子信息 | 医学图像恢复与重建 | 扩散模型"
+  defaultTheme: "dark"
+  defaultThemeTolerance: true
+  showTOC: true
+  showtoc: true
+  showCodeExpandButton: true
+  showWordCounts: true
+  showPostNav: true
+  showBreadcrumbMobile: true
+  showScrollToTop: true
+  fuse:
+    minValue: 1
+    wordLength: 3
+
+  katex:
+    source: "cdn"
+
+  footer:
+    showCopyright: true
+    showTheme: true
+    powerbyHtml: false
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+services:
+  googleAnalytics:
+    id: ""

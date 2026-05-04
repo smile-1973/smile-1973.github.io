@@ -1,0 +1,41 @@
+{{ define "title" }}
+  {{ .Site.Title }}
+{{ end }}
+
+{{ define "header" }}
+<div class="heading">
+  <h1>{{ .Site.Title }}</h1>
+</div>
+{{ end }}
+
+{{ define "main" }}
+<section class="container">
+  <div class="profile">
+    <div class="title">{{ .Site.Title }}</div>
+    <div class="subtitle">
+      {{ .Site.Params.description | default "医学图像处理 | 扩散模型 | 深度学习" }}
+    </div>
+    <div class="links">
+      {{ range site.Menus.main }}
+      {{ if ne .Identifier "home" }}
+      <a href="{{ .URL }}">
+        <div class="button">{{ .Name }}</div>
+      </a>
+      {{ end }}
+      {{ end }}
+    </div>
+  </div>
+  <div class="recent">
+    <h2>最新文章</h2>
+    {{ $posts := where site.RegularPages "Section" "in" (slice "posts") }}
+    {{ range $posts | first 5 }}
+    <a href="{{ .RelPermalink }}">
+      <h3>{{ .Title }}</h3>
+    </a>
+    {{ end }}
+    {{ if gt (len $posts) 5 }}
+    <a href="/posts/">查看全部 &rarr;</a>
+    {{ end }}
+  </div>
+</section>
+{{ end }}
