@@ -19,7 +19,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      HUGO_VERSION: 0.158.0
+      HUGO_VERSION: 0.139.0
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -40,11 +40,11 @@ jobs:
       - name: Build with Hugo
         env:
           HUGO_ENVIRONMENT: production
-          HUGIO_ENABLE_GIT: true
         run: |
           hugo \
             --baseURL "${{ steps.pages.outputs.baseURL }}" \
             --gc --minify
+          ls -la public/
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
