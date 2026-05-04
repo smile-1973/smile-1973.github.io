@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>工具笔记 on XMZ&#39;s Blog</title>
+    <link>https://smile-1973.github.io/categories/%E5%B7%A5%E5%85%B7%E7%AC%94%E8%AE%B0/</link>
+    <description>Recent content in 工具笔记 on XMZ&#39;s Blog</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 04 May 2026 13:52:12 +0800</lastBuildDate>
+    <atom:link href="https://smile-1973.github.io/categories/%E5%B7%A5%E5%85%B7%E7%AC%94%E8%AE%B0/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>博客首发：环境与工具配置</title>
+      <link>https://smile-1973.github.io/posts/2026-05-04-welcome/</link>
+      <pubDate>Mon, 04 May 2026 13:52:12 +0800</pubDate>
+      <guid>https://smile-1973.github.io/posts/2026-05-04-welcome/</guid>
+      <description>记录 Hugo 博客搭建及科研环境配置过程</description>
+    </item>
+  </channel>
+</rss>
